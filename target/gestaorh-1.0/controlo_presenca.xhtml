@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Controlo de presença</title>
+        <h:outputStylesheet library="css" name="bootstrap.min.css"/>
+        <h:outputScript library="js" name="jquery-3.5.1.min.js" />
+        <h:outputStylesheet library="css" name="main.css"/>
+    </h:head>
+    <h:body>
+        <section class="container jumbotron" id="primeiro">
+            <h2> Controlo de Presença</h2>
+            <h:form style="width: 100%; margin-left: 20px;"> 
+
+                <div class="form-row">
+                    <h:panelGrid columns="2">
+                        <h:outputLabel value="Funcionário:"/>
+                        <h:selectOneMenu class="form-control" id="funcionario">
+
+                        </h:selectOneMenu>
+                    </h:panelGrid>
+                </div> 
+                <div class="form-row" > 
+                    <h:panelGrid columns="4"> 
+                        <h:outputLabel value="Data:"/> 
+                        <h:inputText class="form-control" id="data">
+                            <f:convertDateTime dateStyle="medium" pattern="dd/MM/yyyy"/>
+                        </h:inputText> 
+                        <h:outputLabel value="Dia da Semana:"/>
+                        <h:selectOneMenu class="form-control" id="dia_semana">
+
+                        </h:selectOneMenu> 
+                    </h:panelGrid>
+                </div>
+                <div class="form-row" > 
+                    <h:panelGrid columns="4">
+                        <h:outputLabel value="Entrada(hora):"/> 
+                        <h:inputText class="form-control" id="data_entrada">
+                            <f:convertDateTime timeStyle="medium" pattern="dd/MM/yyyy"/>
+                        </h:inputText> 
+                        <h:outputLabel value="Saida(hora):"/> 
+                        <h:inputText class="form-control" id="data_saida">
+                            <f:convertDateTime dateStyle="medium" pattern="dd/MM/yyyy"/>
+                        </h:inputText>  
+                    </h:panelGrid>
+                </div>
+                <div class="form-row">
+                    <h:panelGrid columns="5">
+                        <h:outputLabel value="Periodo:"/>
+                        <h:selectBooleanCheckbox value="" id = "chkManha" class="form-check" />
+                        <h:outputLabel value="Manha" class="form-check-label"/> 
+
+                        <h:selectBooleanCheckbox value="" id = "chkTarde" class="form-check" />
+                        <h:outputLabel value="Tarde" class="form-check-label"/> 
+                </h:panelGrid>  
+                </div>
+
+            </h:form>
+
+        </section>
+    </h:body>
+</html>
+

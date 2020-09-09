@@ -1,0 +1,13 @@
+rh\dao\DepartamentoDAO.class
+rh\controlo\MassaCorporalCDIBean.class
+rh\modelo\Departamento.class
+rh\modelo\MassaCorporal.class
+rh\modelo\Municipio.class
+rh\controlo\FuncionarioCDIBean.class
+db\util\AppMYSQL.class
+db\util\ConexaoDB.class
+gestaorh\app\JAXRSConfiguration.class
+rh\modelo\Funcionario.class
+rh\controlo\DepartamentoCDIBean.class
+rh\modelo\Provincia.class
+rh\dao\FuncionarioDAO.class
